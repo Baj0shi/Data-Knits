@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Knits - Proyecto G4</title>
+    <!-- Aquí agregamos un poco de diseño (CSS) para que no se vea como un documento en blanco plano -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .contenedor {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #34495e;
+        }
+        p {
+            text-align: justify;
+        }
+        .pasos {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Investigación: Data Knits</h1>
+
+        <h2>¿Qué es el diseño Wearable?</h2>
+        <p>El arte y diseño computacional wearable (o tecnología vestible) une la computación, la ingeniería de materiales, la moda y las artes visuales para crear objetos y prendas interactivas que se llevan sobre el cuerpo.</p>
+
+        <h2>¿Qué es Data Knits?</h2>
+        <p>Data Knits es un proyecto de Claire Williams donde se traducen y codifican datos sensibles o digitales hacia una serie de datos dentro de una superficie textil, formando patrones o estructuras que se materializan por medio de tejido. Esto se logró mediante el hackeo de una máquina de coser antigua de la marca Brother y un software donde autómatas celulares traducen estímulos que a su vez son captados por sensores.</p>
+
+        <h2>¿Quién es Claire Williams?</h2>
+        <p>Claire Williams es una artista e investigadora radicada en Bruselas que encuentra la manera de materializar lo invisible. Su trabajo consiste en tomar datos científicos y ondas electromagnéticas, desde señales del cosmos hasta la actividad del cuerpo humano, y transformarlos en piezas tangibles y sorprendentes, como antenas tejidas y esculturas de vidrio con plasma. Egresada en Diseño Textil por la ENSAV La Cambre y con formación en Le Fresnoy, su obra ha recorrido festivales y museos de arte digital y sonoro en todo el mundo.</p>
+
+        <h2>Funcionamiento del Proyecto</h2>
+        
+        <h3>1. El hackeo del Hardware</h3>
+        <p>Ya que estas máquinas antiguas venían de fábrica con memorias muy limitadas y sistemas cerrados, se interviene la placa base de la máquina conectando un microcontrolador (como un Arduino). Este circuito hackeado toma el control de los solenoides (electroimanes que deciden si una aguja sube para tomar un color de hilo o se queda abajo). Una computadora, tras ejecutar el código del autómata celular, envía en tiempo real la instrucción exacta de qué agujas activar para cada pasada del carro.</p>
+
+        <h3>2. Los Autómatas Celulares y la Semilla</h3>
+        <p>Las antenas captan ondas electromagnéticas (señales analógicas). Un Convertidor Analógico-Digital (ADC) mide el voltaje y convierte esa electricidad en números brutos. Mediante programación creativa, se establece un umbral (por ejemplo, si el número es alto, se convierte en 1/hilo negro; si es bajo, en 0/hilo blanco). Al interior del computador, el autómata aplica sus reglas lógicas de vecindad fila por fila, transformando el dato lineal en un patrón gráfico que se entrega a la tejedora.</p>
+
+        <div class="pasos">
+            <h3>Paso a Paso del Proceso</h3>
+            <ol>
+                <li><strong>Selección de los datos de origen:</strong> Se define qué información se quiere traducir (datos digitales, imagen, sonido o sistema matemático).</li>
+                <li><strong>Procesamiento mediante reglas:</strong> Los datos se procesan mediante un algoritmo que transcodifica la información usando autómatas celulares.</li>
+                <li><strong>Traducción a un patrón legible:</strong> El resultado computacional se convierte en una matriz o patrón digital en una cuadrícula.</li>
+                <li><strong>Codificación para la máquina:</strong> El patrón se adapta al sistema de control de la máquina de tejido electrónica modificada.</li>
+                <li><strong>Materialización textil:</strong> La máquina ejecuta las instrucciones y produce una superficie tejida física de hilos y puntos.</li>
+            </ol>
+        </div>
+
+        <h2>Principios de Lev Manovich abordados</h2>
+        <ul>
+            <li><strong>Representación numérica:</strong> Todo el contenido se origina a partir de datos computacionales, señales digitales y ondas electromagnéticas que son cuantificadas, procesadas y traducidas en valores numéricos y binarios.</li>
+            <li><strong>Transcodificación:</strong> Se realiza una profunda transformación de la información abstracta y el código informático hacia una capa material y cultural distinta, materializándose en tramas textiles.</li>
+            <li><strong>Variabilidad:</strong> La utilización de modelos algorítmicos (autómatas celulares) permite que los patrones no sean fijos, sino que puedan mutar y generar infinitas variaciones a partir de los datos de entrada.</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
