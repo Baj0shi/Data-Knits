@@ -1,0 +1,477 @@
+body {
+    background-image: url('PTCOM_Fondo.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: center top;
+    margin: 0;
+}
+
+.contenedor-principal {
+    max-width: 800px; /* Ajusta este valor según el ancho de la zona gris */
+    margin-left: auto;
+    margin-right: auto; /* Estos dos márgenes centran todo tu contenido */
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center; /* Centra todo el bloque de imágenes horizontalmente */
+    align-items: center; /* Las alinea en el mismo eje vertical */
+    gap: 50px; /* Crea el espacio entre el reloj y el telar, reemplazando el margin-right */
+    margin-top: 40px; /* Para darle respiro respecto al título */
+    margin-bottom: 40px; /* Para darle respiro respecto al párrafo inferior */
+}
+
+/* Pregunta principal debajo de las imágenes */
+.pregunta-principal h2 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: magenta;
+    text-align: center;
+    font-weight: 300; /* Mantiene los puntos separados del estilo pixelado */
+    font-size: 32px; /* Tamaño intermedio entre el título principal y los textos */
+    max-width: 750px;
+    margin: 60px auto 50px auto; /* Le da el respiro necesario arriba y abajo */
+    line-height: 1.4;
+}
+
+.carrusel {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+   h1 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: magenta;
+    text-align: center;
+    font-weight: 300; /* Volvemos al grosor original para recuperar los puntos separados */
+    font-size: 45px; /* Mantenemos el tamaño grande */
+    max-width: 750px; /* Mantenemos el salto a dos líneas */
+    margin: 60px auto 40px auto; 
+    line-height: 1.2; 
+}
+
+    .parrafo {
+    color: blue;    
+    }
+
+    .texto_azul {
+    color: blue;
+    display: flex;
+    margin: 50px;
+    margin-block: 40;
+    text-align: center;
+    
+    }
+
+/* Área deslizable */
+.carrusel-imagenes {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carrusel-imagenes::-webkit-scrollbar {
+  display: none;
+}
+
+/* Imágenes */
+.carrusel-imagenes img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+/* Puntos inferiores */
+.carrusel-puntos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.carrusel-puntos a {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #c5c5c5;
+  display: block;
+}
+
+/* Efecto al pasar el cursor */
+.carrusel-puntos a:hover {
+  background: #555;
+}
+
+/* Párrafo superior centrado */
+.parrafo-intro {
+    color: blue;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 50px auto; /* Centra el bloque y da espacio hacia abajo */
+    line-height: 1.6; /* Mejora la legibilidad separando las líneas */
+}
+
+/* Contenedor de la cuadrícula */
+.grilla-conceptos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea exactamente dos columnas del mismo ancho */
+    column-gap: 80px; /* Separación horizontal entre columnas */
+    row-gap: 40px; /* Separación vertical entre filas */
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+/* Estilo individual de cada concepto */
+.concepto {
+    color: blue;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.concepto h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.concepto p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Texto pixelado inferior */
+.parrafo-pixelado {
+    color: blue;
+    text-align: center;
+    font-family: "Bitcount Prop Double", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+/* Título de la autora */
+.titulo-autora h2 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: blue;
+    text-align: center;
+    font-weight: 400; /* Le damos mayor grosor para que destaque en azul */
+    font-size: 32px; 
+    margin-bottom: 40px;
+}
+
+/* Contenedor Flex para foto y texto */
+.contenedor-autora {
+    display: flex;
+    align-items: center; /* Centra verticalmente la foto y el texto */
+    justify-content: center; /* Mantiene todo al centro de la pantalla */
+    gap: 60px; /* Da la separación entre la imagen y los párrafos */
+    margin-bottom: 80px; /* Da respiro antes de llegar al carrusel */
+}
+
+/* Imagen de la autora */
+.contenedor-autora img {
+    max-width: 320px; /* Ajusta este valor si la foto se ve muy grande o pequeña */
+    height: auto;
+}
+
+/* Texto de la biografía */
+.texto-autora {
+    max-width: 450px; /* Evita que el texto se estire demasiado hacia la derecha */
+    color: blue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center; /* Alinea el texto al centro como en tu maqueta */
+    line-height: 1.6;
+}
+
+/* Separación entre los dos párrafos de la biografía */
+.texto-autora p {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Contenedor principal del proyecto */
+.contenedor-proyecto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y el carrusel al centro */
+    justify-content: space-between; /* Empuja el texto a la izquierda y el carrusel a la derecha */
+    gap: 40px; /* Separación entre el texto y el carrusel */
+    margin-bottom: 80px; /* Margen inferior para dar espacio con el siguiente contenido */
+}
+
+/* Estilos para el bloque de texto del proyecto */
+.texto-proyecto {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible sin apretar el carrusel */
+    max-width: 400px; /* Limita el ancho del texto para que no sea muy largo */
+}
+
+/* Título de la sección */
+.texto-proyecto h2 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: magenta; /* Color magenta como en tu diseño */
+    text-align: center; /* Centra el título respecto a su propio bloque de texto */
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Párrafo descriptivo */
+.texto-proyecto p {
+    color: blue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px; /* Tamaño del texto base */
+    text-align: center; /* Alinea el texto justificado o centrado según prefieras */
+    line-height: 1.6;
+}
+
+/* Ajustes adicionales al carrusel si es necesario */
+.carrusel {
+    flex: 1; /* Permite que el carrusel también ocupe espacio equitativamente */
+    max-width: 500px; /* Limita el ancho del carrusel, puedes ajustarlo si lo necesitas */
+    margin: 0; /* Quitamos el margin auto que tenía antes, ya que flexbox lo posiciona */
+}
+
+/* Sección Diagrama */
+.seccion-diagrama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Separa el diagrama del carrusel */
+    margin-bottom: 80px;
+}
+
+.seccion-diagrama h2 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: magenta;
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase; /* Fuerza las mayúsculas como en tu diseño */
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Contenedor relativo para poder posicionar cosas encima de la imagen */
+.diagrama-interactivo {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.diagrama-interactivo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Los rectángulos invisibles que detectarán el cursor */
+.zona-invisible {
+    position: absolute;
+    width: 25%;  /* Ancho aproximado del recuadro fucsia respecto a la imagen total */
+    height: 8%;  /* Alto aproximado del recuadro fucsia */
+    
+    /* TRUCO: Descomenta la siguiente línea (bórrale los /* */) para ver los rectángulos de color negro semitransparente mientras ajustas sus posiciones. Cuando termines, vuelve a comentarla o bórrala para que sean invisibles. */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    
+    cursor: help; /* Cambia el cursor a un signo de interrogación al pasar por encima */
+}
+
+/* El cuadrito de texto oculto */
+/* El cuadrito de texto oculto (Actualizado con Flexbox) */
+.texto-emergente {
+    position: absolute;
+    bottom: 120%; /* Lo posiciona justo arriba del recuadro fucsia */
+    left: 50%;
+    transform: translateX(-50%); /* Lo centra perfectamente respecto a su recuadro */
+    background-color: blue; /* Fondo azul para contrastar */
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 15px;
+    border-radius: 8px;
+    
+    /* Nuevas reglas para acomodar la imagen */
+    width: 400px; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    text-align: left; 
+    
+    opacity: 0; /* Totalmente transparente por defecto */
+    visibility: hidden; /* Oculto para que no estorbe */
+    transition: all 0.3s ease; /* Hace que aparezca suavemente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+    pointer-events: none; /* Evita que el propio texto interfiera con el cursor */
+}
+
+/* Evita que el párrafo empuje la imagen de forma extraña */
+.texto-emergente p {
+    margin: 0;
+    flex: 1; /* Toma el espacio disponible */
+}
+
+/* Estilo para la imagen miniatura dentro de la caja */
+.texto-emergente img {
+    width: 120px; /* Tamaño de la miniatura */
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0; /* Evita que la foto se aplaste */
+}
+
+/* La flechita pequeña debajo del cuadro de texto */
+.texto-emergente::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: blue transparent transparent transparent;
+}
+
+/* El efecto al pasar el cursor */
+.zona-invisible:hover .texto-emergente {
+    opacity: 1;
+    visibility: visible;
+    bottom: 130%; /* Crea un pequeño efecto de que el texto flota hacia arriba */
+}
+
+/* --- SECCIÓN CONCLUSIÓN --- */
+.seccion-conclusion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 100px; /* Da un buen espacio en blanco antes de que termine la página */
+}
+
+.pre-titulo {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: blue;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo-conclusion {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: blue;
+    font-weight: 400; 
+    font-size: 26px;
+    text-align: center;
+    max-width: 650px; /* Evita que el título sea muy largo horizontalmente */
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.texto-conclusion {
+    color: blue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 750px; /* Contiene el texto para que no toque los bordes del fondo */
+    margin-bottom: 40px;
+}
+
+.texto-conclusion p {
+    margin-bottom: 0px; /* Separa los párrafos entre sí */
+}
+
+.seccion-conclusion img {
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor para el tamaño del patrón cuadrado */
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* --- MEME FINAL --- */
+.meme-basada {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: blue;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 100px; /* Aumentamos el espacio superior para separarlo del texto de conclusión */
+    margin-bottom: 120px; /* Añadimos espacio inferior para separarlo de las referencias */
+    overflow: hidden; 
+    width: 100%;
+}
+
+/* Estado inicial: ocultos y fuera de la pantalla */
+.vuela-izq, .vuela-der {
+    display: inline-block;
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Crea el movimiento fluido de 1 segundo */
+}
+
+.vuela-izq {
+    transform: translateX(-100vw); /* Escondido a la izquierda */
+    opacity: 0;
+}
+
+.vuela-der {
+    transform: translateX(100vw); /* Escondido a la derecha */
+    opacity: 0;
+}
+
+/* Esta es la clase que el JavaScript agrega al scrollear */
+.animar {
+    transform: translateX(0); /* Vuelven a su posición original en el centro */
+    opacity: 1;
+}
+
+/* --- SECCIÓN REFERENCIAS --- */
+.seccion-referencias {
+    max-width: 750px; /* Mantiene las referencias alineadas con el ancho del texto de conclusión */
+    margin: 0 auto 100px auto; 
+    padding: 0 20px;
+}
+
+.seccion-referencias h2 {
+    font-family: "Bitcount Prop Double", sans-serif;
+    color: magenta;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left; /* Alineado a la izquierda por formalidad bibliográfica */
+}
+
+.seccion-referencias ul {
+    list-style-type: none; /* Quita las viñetas por defecto (los puntitos) */
+    padding: 0;
+    margin: 0;
+}
+
+.seccion-referencias li {
+    color: blue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px; /* Espacio entre cada referencia */
+    overflow-wrap: break-word; /* Fuerza a que los enlaces muy largos salten a la siguiente línea en vez de salirse de la pantalla */
+}
+
+/* Estilo para los enlaces de las referencias */
+.seccion-referencias a {
+    color: magenta; 
+    text-decoration: none; /* Quita el subrayado por defecto */
+    transition: color 0.2s ease;
+}
+
+.seccion-referencias a:hover {
+    text-decoration: underline; /* Aparece el subrayado solo al pasar el cursor */
+}

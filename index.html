@@ -1,92 +1,213 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Knits - Proyecto G4</title>
-    <!-- Aquí agregamos un poco de diseño (CSS) para que no se vea como un documento en blanco plano -->
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .contenedor {
-            max-width: 800px;
-            margin: 40px auto;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
-        }
-        h3 {
-            color: #34495e;
-        }
-        p {
-            text-align: justify;
-        }
-        .pasos {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 6px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Document</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="Style.css">
+
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
+<!-- 1. Aquí ABRIMOS el contenedor principal y lo dejamos abierto -->
+<div class="contenedor-principal">
+    
+    <h1>
+        Data Knits: Tecnología que resignifica lo que vestimos
+    </h1>
 
-    <div class="contenedor">
-        <h1>Investigación: Data Knits</h1>
+<p class="parrafo-intro"> Borja Espinoza - Diana Márquez - Gabriela Molina - Bastian Palma - Trinidad Prieto - Magdalena Quevedo  </p>
 
-        <h2>¿Qué es el diseño Wearable?</h2>
-        <p>El arte y diseño computacional wearable (o tecnología vestible) une la computación, la ingeniería de materiales, la moda y las artes visuales para crear objetos y prendas interactivas que se llevan sobre el cuerpo.</p>
+    <div class="contenedor-imagenes">
+        <img src="Reloj Cross Stitch Azul.png" alt="">
+        <img src="Telar Cross Stitch Azul.png" alt="">
+    </div>
 
-        <h2>¿Qué es Data Knits?</h2>
-        <p>Data Knits es un proyecto de Claire Williams donde se traducen y codifican datos sensibles o digitales hacia una serie de datos dentro de una superficie textil, formando patrones o estructuras que se materializan por medio de tejido. Esto se logró mediante el hackeo de una máquina de coser antigua de la marca Brother y un software donde autómatas celulares traducen estímulos que a su vez son captados por sensores.</p>
+    <!-- Pregunta principal faltante -->
+    <div class="pregunta-principal">
+        <h2>¿La computación creativa está en el objeto,<br>en su proceso de fabricación o en ambos?</h2>
+    </div>
 
-        <h2>¿Quién es Claire Williams?</h2>
-        <p>Claire Williams es una artista e investigadora radicada en Bruselas que encuentra la manera de materializar lo invisible. Su trabajo consiste en tomar datos científicos y ondas electromagnéticas, desde señales del cosmos hasta la actividad del cuerpo humano, y transformarlos en piezas tangibles y sorprendentes, como antenas tejidas y esculturas de vidrio con plasma. Egresada en Diseño Textil por la ENSAV La Cambre y con formación en Le Fresnoy, su obra ha recorrido festivales y museos de arte digital y sonoro en todo el mundo.</p>
+    <!-- Párrafo introductorio -->
+    <div class="parrafo-intro">
 
-        <h2>Funcionamiento del Proyecto</h2>
-        
-        <h3>1. El hackeo del Hardware</h3>
-        <p>Ya que estas máquinas antiguas venían de fábrica con memorias muy limitadas y sistemas cerrados, se interviene la placa base de la máquina conectando un microcontrolador (como un Arduino). Este circuito hackeado toma el control de los solenoides (electroimanes que deciden si una aguja sube para tomar un color de hilo o se queda abajo). Una computadora, tras ejecutar el código del autómata celular, envía en tiempo real la instrucción exacta de qué agujas activar para cada pasada del carro.</p>
+<!-- Párrafo introductorio -->
+<div class="parrafo-intro">
+    <p>Para responder esta pregunta debemos ver que entendemos por Wereable. El arte y diseño computacional wearable (o tecnología vestible) une la computación, la ingeniería de materiales, la moda y las artes visuales para crear objetos y prendas interactivas que se llevan sobre el cuerpo.</p>
+</div>
 
-        <h3>2. Los Autómatas Celulares y la Semilla</h3>
-        <p>Las antenas captan ondas electromagnéticas (señales analógicas). Un Convertidor Analógico-Digital (ADC) mide el voltaje y convierte esa electricidad en números brutos. Mediante programación creativa, se establece un umbral (por ejemplo, si el número es alto, se convierte en 1/hilo negro; si es bajo, en 0/hilo blanco). Al interior del computador, el autómata aplica sus reglas lógicas de vecindad fila por fila, transformando el dato lineal en un patrón gráfico que se entrega a la tejedora.</p>
+<!-- Grilla de 4 conceptos -->
+<div class="grilla-conceptos">
+    <div class="concepto">
+        <h3>Computación física y textiles inteligentes:</h3>
+        <p>Integración de microcontroladores, sensores y circuitos flexibles directamente en telas o grafeno para responder a estímulos del entorno o del cuerpo.</p>
+    </div>
+    <div class="concepto">
+        <h3>Extensión sensorial y Cyborgs:</h3>
+        <p>Creación de interfaces corporales que amplifican los sentidos humanos o generan puentes de comunicación biológica y digital.</p>
+    </div>
+    <div class="concepto">
+        <h3>Ergonomía de precisión y diseño 4D:</h3>
+        <p>Uso de algoritmos, modelado tridimensional y escáneres 4D para lograr estructuras y calces exactos que se adaptan a la anatomía humana.</p>
+    </div>
+    <div class="concepto">
+        <h3>Moda y expresión (Fashion-Tech):</h3>
+        <p>Transformación de la ropa en un medio artístico y comunicativo, desde poesía digital interactiva vía NFC hasta piezas de alta costura conceptual o smartwatches de diseño de autor.</p>
+    </div>
+</div>
 
-        <div class="pasos">
-            <h3>Paso a Paso del Proceso</h3>
-            <ol>
-                <li><strong>Selección de los datos de origen:</strong> Se define qué información se quiere traducir (datos digitales, imagen, sonido o sistema matemático).</li>
-                <li><strong>Procesamiento mediante reglas:</strong> Los datos se procesan mediante un algoritmo que transcodifica la información usando autómatas celulares.</li>
-                <li><strong>Traducción a un patrón legible:</strong> El resultado computacional se convierte en una matriz o patrón digital en una cuadrícula.</li>
-                <li><strong>Codificación para la máquina:</strong> El patrón se adapta al sistema de control de la máquina de tejido electrónica modificada.</li>
-                <li><strong>Materialización textil:</strong> La máquina ejecuta las instrucciones y produce una superficie tejida física de hilos y puntos.</li>
-            </ol>
+<!-- Párrafo de transición al carrusel -->
+<div class="parrafo-pixelado">
+    <p>Estos dos conceptos son principalmente rescatados por la autora del proyecto:</p>
+</div>
+
+<!-- Sección Biografía de la Autora -->
+<div class="titulo-autora">
+    <h2>Claire Williams</h2>
+</div>
+
+<div class="contenedor-autora">
+    <!-- Asegúrate de poner el nombre exacto de la imagen que exportes de Figma -->
+    <img src="PTCOM_Claire William.png" alt="Retrato de Claire Williams">
+    
+    <div class="texto-autora">
+        <p>Claire Williams es una <b> artista e investigadora </b> radicada en Bruselas que encuentra la manera de <b> materializar lo invisible </b>. Su trabajo convierte datos científicos y ondas electromagnéticas (como señales del cosmos y la actividad del cuerpo humano) en <b> piezas tangibles y sorprendentes</b>, como antenas tejidas y esculturas de vidrio con plasma.</p>
+        <p>Egresada en Diseño Textil por la ENSAV La Cambre y con formación en Le Fresnoy, su obra ha recorrido festivales y museos internacionales de arte digital y sonoro. Además de exponer alrededor del mundo, comparte su conocimiento enseñando en escuelas de arte. Actualmente, impulsa el proyecto a dúo "Les Æthers", una fascinante exploración dedicada a reactivar prácticas de observación e interacción con lo intangible resguardadas en archivos de la ciencia experimental de los siglos XIX y XX.</p>
+    </div>
+</div>
+
+    <!-- Sección Proyecto y Carrusel -->
+<div class="contenedor-proyecto">
+    <!-- Bloque de texto a la izquierda -->
+    <div class="texto-proyecto">
+        <h2>Data Knits</h2>
+    <p>Data Knits es un proyecto de exploraciones desarrolladas por Claire Williams donde <b> se traducen y codifican datos digitales e invisibles dentro de la trama de una superficie textil</b>, formando patrones y estructuras que se materializan por medio del tejido. El proceso técnico se basa en el <b> hackeo de una máquina de coser domestica</b> marca Brother y articulada con un  software que opera bajo algoritmos de  <b>autómatas celulares</b> que traducen estímulos del entorno captados mediante sensores convirtiendo lecturas intangibles en estructuras físicas tangibles
+</p>
+    </div>
+
+    <!-- Carrusel a la derecha (Tu código actual envuelto aquí) -->
+    <div class="carrusel">
+        <div class="carrusel-imagenes">
+            <img src="PTCOM_Imagen principal.png" id="imagen1" alt="Imagen 1">
+            <img src="PTCOM_Patron 01.png" id="imagen2" alt="Imagen 2">
+            <img src="PTCOM_Patron 02.png" id="imagen3" alt="Imagen 3">
         </div>
 
-        <h2>Principios de Lev Manovich abordados</h2>
-        <ul>
-            <li><strong>Representación numérica:</strong> Todo el contenido se origina a partir de datos computacionales, señales digitales y ondas electromagnéticas que son cuantificadas, procesadas y traducidas en valores numéricos y binarios.</li>
-            <li><strong>Transcodificación:</strong> Se realiza una profunda transformación de la información abstracta y el código informático hacia una capa material y cultural distinta, materializándose en tramas textiles.</li>
-            <li><strong>Variabilidad:</strong> La utilización de modelos algorítmicos (autómatas celulares) permite que los patrones no sean fijos, sino que puedan mutar y generar infinitas variaciones a partir de los datos de entrada.</li>
-        </ul>
+        <div class="carrusel-puntos">
+            <a href="#imagen1" aria-label="Ir a imagen 1"></a>
+            <a href="#imagen2" aria-label="Ir a imagen 2"></a>
+            <a href="#imagen3" aria-label="Ir a imagen 3"></a>
+        </div>
+    </div>
+</div>
 
+<!-- Cierre del contenedor-proyecto que ya tienes -->
+    </div>
+
+   <!-- Sección Diagrama Explicativo -->
+    <div class="seccion-diagrama">
+        <h2>Diagrama Explicativo</h2>
+        
+        <div class="diagrama-interactivo">
+            <!-- Tu imagen de fondo -->
+            <img src="PTCOM_Diagrama Explicativo.png" alt="Diagrama explicativo del proceso Data Knits">
+
+            <!-- Zona invisible 1: Representación numérica -->
+            <div class="zona-invisible" style="top: 7%; right: 1%;">
+                <div class="texto-emergente">
+                    Representación numérica: El proyecto se logra identificar datos computacionales, señales digitales y ondas electromagnéticas que sean cuantificadas, procesadas y traducidas en valores numéricos y binarios aptos para ser leídos por sistemas digitales.
+
+                </div>
+            </div>
+
+           <!-- Zona invisible 2: Transcodificación -->
+            <div class="zona-invisible" style="top: 25%; right: 1%;">
+                <div class="texto-emergente">
+                    <p>Transcodificación: El proyecto realiza una transformación de la información abstracta y el código informático (como algoritmos o datos invisibles del entorno) hacia una capa material de tramas, puntos y superficies textiles.</p>
+                    
+                    <!-- RECUERDA PONER EL NOMBRE DE TU IMAGEN AQUÍ -->
+                    <img src="PTCOM_Automata Celular.png" alt="Ejemplo Transcodificación">
+                </div>
+            </div>
+
+            <!-- Zona invisible 3: Variabilidad -->
+            <div class="zona-invisible" style="top: 36%; right: 1%;">
+                <div class="texto-emergente">
+                    Variabilidad: La utilización de software y modelos algorítmicos como autómatas celulares, permite que los patrones visuales y geométricos no sean fijos ni estándar, sino que puedan mutar infinitamente. 
+                </div>
+            </div>
+            
+            <!-- Puedes copiar y pegar más bloques de estos si hay más recuadros abajo -->
+        </div>
+    </div>
+
+<!-- Cierre del contenedor-principal -->
+</div>
+
+<!-- Sección Conclusión -->
+    <div class="seccion-conclusion">
+        <h4 class="pre-titulo">Entonces...</h4>
+        <h2 class="titulo-conclusion">¿La computación creativa está en el objeto,<br>en su proceso de fabricación o en ambos?</h2>
+
+        <div class="texto-conclusion">
+            <p>El proyecto Data Knits aborda la dimensión textil desde la computación al traducir flujos de datos en patrones, expandiendo las posibilidades del medio al proponer un nuevo lenguaje gráfico materializado a través del textil. Lo que particularmente nos permitió entender cómo y por qué plantea así su proceso de investigación sobre patrones étnicos, donde <b>ya existe una traducción de diversos “datos” al tejido, lo que llena de significado a la prenda de vestir.</b> Al conversar en grupo, comenzamos a imaginar todas las posibilidades que esto brinda: podríamos vestir sonidos amados, risas, lluvia o música.</p>
+            
+            <p>Por otro lado, al contrastar el proyecto y las definiciones de otros proyectos de <b>wearables</b>, surgieron cuestionamientos. Al principio no entendíamos <b>por qué Data Knits entraba en dicha categoría,</b> ya que uno suele imaginar un wearable como una prenda u accesorio que nos soluciona una necesidad o prolongación de nuestro propio. Sin embargo, a medida que fuimos comprendiendo el proyecto, dimensionamos <b>mejor las posibilidades que ofrece respecto a la resignificación de nuestras prendas, transformando la ropa en un medio artístico y comunicativo.</b></p>
+        </div>
+
+        <!-- Recuerda exportar esta imagen desde tu Figma y ponerle el nombre correcto aquí -->
+        <img src="PTCOM_Reflexión.png" alt="Patrón tejido Data Knits en magenta y azul">
+
+        <div class="texto-conclusion">
+            <p>En tiempos modernos se ha perdido la significación de lo que vestimos, la moda impulsada por el fast fashion, ha unificado nuestras prendas. Este proyecto nos permite volver a significar y apropiarnos de nuestras prendas y textiles, brindando una forma de identidad en la actualidad.</p>
+        </div>
+    </div>
+
+<!-- Huevo de pascua / Meme -->
+        <div class="meme-basada" id="meme">
+            <span class="vuela-izq" id="texto-izq">Conclusión:</span><br>
+            <span class="vuela-der" id="texto-der">Claire Williams Basada</span>
+        </div>
+    
+    <!-- Cierre del contenedor-principal -->
+    </div>
+
+    <!-- Este pequeño script vigila cuándo llegas al final de la página -->
+    <script>
+        const observador = new IntersectionObserver((entradas) => {
+            if (entradas[0].isIntersecting) {
+                // Cuando el meme entra a la pantalla, le agrega la clase que lo anima
+                document.getElementById('texto-izq').classList.add('animar');
+                document.getElementById('texto-der').classList.add('animar');
+            }
+        });
+        observador.observe(document.getElementById('meme'));
+    </script>
+
+<!-- Sección Referencias -->
+    <div class="seccion-referencias">
+        <h2>Referencias</h2>
+        <ul>
+            <li>Alejandra. (s. f.). <i>Una introducción a autómatas celulares - Revista Ciencias</i>. <a href="https://www.revistacienciasunam.com/es/172-revistas/revista-ciencias-24/1572-una-introducci%C3%B3n-a-aut%C3%B3matas-celulares.html" target="_blank">https://www.revistacienciasunam.com/es/172-revistas/revista-ciencias-24/1572-una-introducci%C3%B3n-a-aut%C3%B3matas-celulares.html</a></li>
+            
+            <li><i>Claire Williams</i>. (s. f.). <a href="https://www.xxx-clairewilliams-xxx.com/projets/data-knits/" target="_blank">https://www.xxx-clairewilliams-xxx.com/projets/data-knits/</a></li>
+            
+            <li><i>Lev Manovich</i>. (s. f.). The Language Of New Media. <a href="https://manovich.net/index.php/projects/language-of-new-media" target="_blank">https://manovich.net/index.php/projects/language-of-new-media</a></li>
+            
+            <li>Technocité. (2021, 17 junio). <i>Out of the Frame by Technocité // Interview Claire Williams</i> [Vídeo]. YouTube. <a href="https://www.youtube.com/watch?v=Mii-QedT4vI" target="_blank">https://www.youtube.com/watch?v=Mii-QedT4vI</a></li>
+        </ul>
     </div>
 
 </body>
 </html>
+
+
